@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .container{
+            background-color: blueviolet;
+            color: aqua;
+            height: 100vh;
+            width: 100vw;
+
+        }
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            animation-name: widthanimate;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 3;
+            animation-direction: inherit;
+        }
+        @keyframes widthanimate {
+            from{
+                width: 300px;
+            }
+            to{
+                width: 100vh;
+                height: 100vh;
+            }
+        }
+        /* img{
+            animation: widthanimate 1s ease-in-out 0.5s infinite alternate;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="mannu.jpg" tannu alt="">
+        </div>
+    </div>
+    
+</body>
+</html>
